@@ -151,7 +151,11 @@ else {
 // ELSE FAIL
 
 let scores = 85;
-let scores =  
+if (85 > 25 && 67 > 35){
+console.log("85 is the highest value"); 
+}
+
+
 
 
 
