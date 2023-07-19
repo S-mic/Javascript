@@ -122,7 +122,7 @@ ASSIGMENT OPERATORS
 +=
 -=
 *=
-=
+=5
 
 //  Walking with all the operators 
 //    // Question 
@@ -142,15 +142,39 @@ else {
     console.log("All numbers are the same");
 }*/
 
- Write a program to find the following scores in a tertiary institution.
-If a student got between 75-100 print out >> FIRST CLASS UPPER
- If a student got between 65-74 print out >> SECOND CLASS UPPER
-If a student got between 50-64 print out >> SECOND CLASS UPPER
-If a student got between 41-49 print out >> THIRD CLASS
- If a student got between 30-40 print out >> PASS
-ELSE FAIL
+// Write a program to find the following scores in a tertiary institution.
+    // If a student got between 75-100 print out >> FIRST CLASS UPPER
+    // If a student got between 65-74 print out  >> SECOND CLASS UPPER
+    // If a student got between 50-64 print out  >> SECOND CLASS LOWER
+    // If a student got between 41-49 print out  >> THIRD CLASS
+    // If a student got between 30-40 print out  >> PASS
+    // ELSE FAIL
 
-let scores = 45;
+   
+    //  SOLUTION
+
+    /*let scores = 23;
+    if(scores >= 75 && scores <=100){
+console.log("FIRST CLASS UPPER");
+    }
+
+    else if(scores >= 65 && scores <= 74){
+        console.log("SECOND CLASS UPPER");
+    }
+    else if(scores >= 50 && scores <=64){
+        console.log("SECOND CLASS LOWER");
+    }
+    else if(scores >= 41 && scores <= 49){
+        console.log("THIRD CLASS");
+    }
+else if(scores >= 30 && scores <= 40){
+    console.log("PASS");
+}
+else{
+     console.log("failed...Asked to withdraw");
+}*/
+
+
 
 
 
