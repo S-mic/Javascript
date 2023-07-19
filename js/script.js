@@ -174,6 +174,27 @@ else{
      console.log("failed...Asked to withdraw");
 }*/
 
+// LOOP 
+// A Loop is a sequence of instructions that is continually repeated 
+//  until a certain condition is met 
+
+// TYPE OF LOOP 
+     //While Loop
+let count = 1;
+while(count < 10){
+    document.write(count,"learning while loop </br></br>");
+    count ++;
+}
+
+
+
+
+
+    //Do-while Loop 
+    // For Loop
+    
+    
+
 
 
 
