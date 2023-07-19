@@ -142,18 +142,16 @@ else {
     console.log("All numbers are the same");
 }*/
 
-// Write a program to find theb following scores in a tertiary institution.
-// If a student got between 75-100 print out >> FIRST CLASS UPPER
-// If a student got between 65-74 print out >> SECOND CLASS UPPER
-// If a student got between 50-64 print out >> SECOND CLASS UPPER
-// If a student got between 41-49 print out >> THIRD CLASS
-// If a student got between 30-40 print out >> PASS
-// ELSE FAIL
+ Write a program to find the following scores in a tertiary institution.
+If a student got between 75-100 print out >> FIRST CLASS UPPER
+ If a student got between 65-74 print out >> SECOND CLASS UPPER
+If a student got between 50-64 print out >> SECOND CLASS UPPER
+If a student got between 41-49 print out >> THIRD CLASS
+ If a student got between 30-40 print out >> PASS
+ELSE FAIL
 
-let scores = 85;
-if (85 > 25 && 67 > 35){
-console.log("85 is the highest value"); 
-}
+let scores = 45;
+
 
 
 
