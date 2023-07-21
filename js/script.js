@@ -143,35 +143,35 @@ else {
 }*/
 
 // Write a program to find the following scores in a tertiary institution.
-    // If a student got between 75-100 print out >> FIRST CLASS UPPER
-    // If a student got between 65-74 print out  >> SECOND CLASS UPPER
-    // If a student got between 50-64 print out  >> SECOND CLASS LOWER
-    // If a student got between 41-49 print out  >> THIRD CLASS
-    // If a student got between 30-40 print out  >> PASS
-    // ELSE FAIL
+// If a student got between 75-100 print out >> FIRST CLASS UPPER
+// If a student got between 65-74 print out  >> SECOND CLASS UPPER
+// If a student got between 50-64 print out  >> SECOND CLASS LOWER
+// If a student got between 41-49 print out  >> THIRD CLASS
+// If a student got between 30-40 print out  >> PASS
+// ELSE FAIL
 
-   
-    //  SOLUTION
 
-    /*let scores = 23;
-    if(scores >= 75 && scores <=100){
+//  SOLUTION
+
+/*let scores = 23;
+if(scores >= 75 && scores <=100){
 console.log("FIRST CLASS UPPER");
-    }
+}
 
-    else if(scores >= 65 && scores <= 74){
-        console.log("SECOND CLASS UPPER");
-    }
-    else if(scores >= 50 && scores <=64){
-        console.log("SECOND CLASS LOWER");
-    }
-    else if(scores >= 41 && scores <= 49){
-        console.log("THIRD CLASS");
-    }
+else if(scores >= 65 && scores <= 74){
+    console.log("SECOND CLASS UPPER");
+}
+else if(scores >= 50 && scores <=64){
+    console.log("SECOND CLASS LOWER");
+}
+else if(scores >= 41 && scores <= 49){
+    console.log("THIRD CLASS");
+}
 else if(scores >= 30 && scores <= 40){
-    console.log("PASS");
+console.log("PASS");
 }
 else{
-     console.log("failed...Asked to withdraw");
+ console.log("failed...Asked to withdraw");
 }*/
 
 // LOOP 
@@ -179,21 +179,86 @@ else{
 //  until a certain condition is met 
 
 // TYPE OF LOOP 
-     //While Loop
-let count = 1;
+//While Loop
+/*let count = 0;
 while(count < 10){
-    document.write(count,"learning while loop </br></br>");
+    document.write(count," learning while loop </br>");
+    //count = count = 1;
+    //count += 1;
     count ++;
+}*/
+
+//Do-while Loop 
+// do {
+// let num = 0;
+// do{
+// document.write(num," Do While Loop </br>");
+// num ++;
+// } while(num < 10)
+
+// For Loop
+//     for(let num = 1; num <= 20; num++){
+// document.write(num,"<br/>");
+// if(num % 2 == 0){
+//     document.write("Even </br>");
+// }
+// else if (num % 3 == 0){
+//     document.write("Odd </br>");
+// }
+// else{
+//     document.write(num, "</br>");
+// }
+// }
+
+
+// ASSESSMENT
+
+// Write a Javascript program to run a fizz buzz game from 1-100
+
+//  INSTRUCTIONS 
+// declare and initialize your variable num = 1
+// print out FizzBuzz if num % 3 & num % 5 equals 0
+// print out Fizz if num % 3 equals 0 
+// print out BUZZ if num % 5 equals 0 
+// else print num
+
+// document.write("THIS IS A FIZZ-BUZZ GAME!!! </br>");
+
+// for (let num = 1; num <= 100; num++){
+//     // document.write(num, "</br>");
+//     if (num % 3 == 0 && num % 5 == 0){
+//         document.write("FizzBuzz </br>");
+//     }
+//     else if(num % 3 == 0){
+//         document.write("Fizz </br>");
+//     }
+//     else if(num % 5 == 0){
+//         document.write("Buzz </br>");
+//     }
+//     else{
+//         document.write(num, "</br>");
+//     }
+// }
+
+
+
+//  FUNCTION / METHOD 
+//  A function is a group of reusable codes which can be called anywhere in your program
+
+function saySasha(){
+    document.write("Hi sasha");
+}
+function  calcArea(width,height){
+    let area = width * height; 
+    
+    document.write(area);
 }
 
+calcArea(5, 6);
 
 
 
 
-    //Do-while Loop 
-    // For Loop
-    
-    
 
 
 
