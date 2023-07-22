@@ -245,16 +245,21 @@ while(count < 10){
 //  FUNCTION / METHOD 
 //  A function is a group of reusable codes which can be called anywhere in your program
 
-function saySasha(){
-    document.write("Hi sasha");
+ function saySasha(){
+     document.write("Hi sasha");
 }
+//saySasha();
+
+
 function  calcArea(width,height){
     let area = width * height; 
     
     document.write(area);
 }
 
-calcArea(5, 6);
+calcArea(3, 5);
+
+
 
 
 
