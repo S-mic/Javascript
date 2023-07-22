@@ -245,19 +245,31 @@ while(count < 10){
 //  FUNCTION / METHOD 
 //  A function is a group of reusable codes which can be called anywhere in your program
 
- function saySasha(){
-     document.write("Hi sasha");
-}
+//  function saySasha(){
+//      document.write("Hi sasha");
+// }
 //saySasha();
 
 
-function  calcArea(width,height){
-    let area = width * height; 
+// function  calcArea(width,height){
+//     let area = width * height; 
     
-    document.write(area);
+//     document.write(area);
+// }
+
+// calcArea(3, 5);
+
+function calc(){
+    let w = document.getElementById("width").value;
+    let h = document.getElementById("height").value;
+
+
+    let area = w * h;
+
+    
+    document.getElementById("answer").value = area;
 }
 
-calcArea(3, 5);
 
 
 
