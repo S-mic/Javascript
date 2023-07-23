@@ -251,24 +251,171 @@ while(count < 10){
 //saySasha();
 
 
-// function  calcArea(width,height){
-//     let area = width * height; 
-    
-//     document.write(area);
+//function  calcArea(width,height){
+  //  let area = width * height; 
+    //document.write(area);
+//}
+
+//calcArea(3, 5);
+
+//function calc(){
+  //  let w = document.getElementById("width").value;
+    //let h = document.getElementById("height").value;
+
+    //let area = w * h;
+
+     //document.getElementById("answer").value = area;
+//}
+
+//  FUNCTION ASSESSMENT
+/* Write a Javascript program to find the area of the triangle given 
+the three sides of the three sides of the triangle as a, b, c. 
+area = sqrt(s-a)(s-b)(s-c). where s = a+b+c/2.
+
+Hint > let area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+let s = a+b+c/2 */
+
+// 
+// let a = 3;
+// let b = 4;
+// let c = 6;
+//  let s = a*b*c/2;
+// function  calcArea(a,b,c){
+// let area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+// document.write(area);
 // }
+//calcArea();
 
-// calcArea(3, 5);
+// CORRECT ONE 
+// function calc(){
+   
+//     let a = document.getElementById("a").value;
+//     let b = document.getElementById("b").value;
+//     let c = document.getElementById("c").value;
+//     let s = a*b*c/2;
+//     let area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+//     document.getElementById("answer").value = area;
+//  }
 
-function calc(){
-    let w = document.getElementById("width").value;
-    let h = document.getElementById("height").value;
+// ARRAYS
+// Array is an object that store multiple values on a single variable.
+
+// let subjectNames = ["Maths",20,30,"English"," Civil"];
+//  document.write(subjectNames[2]);
+
+// let femaleNames = [];
+//  femaleNames[0] = "Sasha";
+//  femaleNames[1] = "Michelle";
+//  femaleNames[2] = "Imani";
+// document.write(femaleNames[2]);
 
 
-    let area = w * h;
 
-    
-    document.getElementById("answer").value = area;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
