@@ -309,6 +309,55 @@ let s = a+b+c/2 */
 //  femaleNames[2] = "Imani";
 // document.write(femaleNames[2]);
 
+//  OBJECT ARRAYS 
+// A. Encapsulation - the bundling of data with the mechanisms or methods that operate on the data.
+// B. Aggregation - An aggregator is a software program designed to collect data from multiple sources. 
+// C. Inheritance - Inheritance is a concept in object-oriented programming that allows one class to inherit properties and characteristics from another class.
+// D. Polymorphism - having many forms
+
+//  NUMBER
+// let num1 = 3;
+// let num2 = 5;
+
+// document.write(num1+num2 + "<br>");
+// let num3 = 4;
+// let num4 = "6";
+// document.write(num3+num4);
+
+// let num1 = 7.6;
+// let num2 = Math.round(num1);
+// let value = Math.floor(Math.random() *10);
+
+//  document.write(value);
+
+// DESTRUCTURING ARRAYS
+// When we destructure an array, we are assigningit into a variable.
+
+// First Example 
+// let nameOfAnimals = ["cats","dogs","rabbits","goats","cows","lion"];
+// let [animal1, animal2, animal3, animal4, animal5, animal6] = nameOfAnimals;
+// document.write(animal6, animal3);
+
+// Second Example
+// let carNames = ["Toyota", "Lexus", "BMW", "Renault"];
+// //let car1, remaingCars;
+// [car1,...remaingCars] = carNames;
+// document.write(car1, remaingCars);
+
+// Third Example
+let carNames = ["Toyota", "Lexus", "BMW", "Renault"];
+let remaingCars;
+ [,,,...remaingCars] = carNames;
+ document.write(remaingCars);
+
+
+
+
+
+
+
+
+
 
 
 
