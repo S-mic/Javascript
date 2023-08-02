@@ -252,19 +252,19 @@ while(count < 10){
 
 
 //function  calcArea(width,height){
-  //  let area = width * height; 
-    //document.write(area);
+//  let area = width * height; 
+//document.write(area);
 //}
 
 //calcArea(3, 5);
 
 //function calc(){
-  //  let w = document.getElementById("width").value;
-    //let h = document.getElementById("height").value;
+//  let w = document.getElementById("width").value;
+//let h = document.getElementById("height").value;
 
-    //let area = w * h;
+//let area = w * h;
 
-     //document.getElementById("answer").value = area;
+//document.getElementById("answer").value = area;
 //}
 
 //  FUNCTION ASSESSMENT
@@ -288,7 +288,7 @@ let s = a+b+c/2 */
 
 // CORRECT ONE 
 // function calc(){
-   
+
 //     let a = document.getElementById("a").value;
 //     let b = document.getElementById("b").value;
 //     let c = document.getElementById("c").value;
@@ -345,26 +345,248 @@ let s = a+b+c/2 */
 // document.write(car1, remaingCars);
 
 // Third Example
-let carNames = ["Toyota", "Lexus", "BMW", "Renault"];
-let remaingCars;
- [,,,...remaingCars] = carNames;
- document.write(remaingCars);
+// let carNames = ["Toyota", "Lexus", "BMW", "Renault"];
+// let remaingCars;
+//  [,,,...remaingCars] = carNames;
+//  document.write(remaingCars);
 
+// OBJECTS
+// let person = new Object();
+// person.name = "Sasha";
+// person.age = 24;
+// document.write(person.age);
 
+// let person = {
+//     name : "Sasha",
+//     age: 24, 
+//     grade: 12, 
+//     state: "jhb"
+// };
+//document.write(person.grade);
 
+// DESTRUCTURING OF OBJECT 
+// let car = {
+//  id : 5000,
+//    style : "convertible"
+//};
+// console.log(car.id);
 
+// let {id,style} = car;
+// document.write(id);
+// console.log(id, style);
 
+// SECOND EXAMPLE
+// let car = {
+//     id: 5000,
+//     style: "convertible"
+// };
+// let id, style;
+// ({id, style}=car);
+// document.write(id);
 
+// TypeOf
+// typeof(1);              //number
+// typeof(true);           //boolean
+// typeof("Hello");        //string
+// typeof(function(){});   //function
+// typeof({});             //Object
+// typeof(undefined);      //Undefined
 
+// console.log(typeof(123456));
 
+// COMMON TYPE CONVERSIONS
 
+// convert to string 
+//foo.toString();
+// convert string to integer
+//Number.parseInt('5');  //55 as a number 
+// convert string to number 
+//Number.parseFloat('55.99'); //55.99 as a number 
 
+//console.log(String("Sasha"));
+//console.log(Number.parseFloat('55.99'));
+// console.log(Number.parseInt('55'));
 
+//CONTROLLING LOOPS
+// Initialization: In this expression, we initialize the loop counter. This expression is executed only once at the beginning of the for loop.
+//Condition: In this expression, we write the logical condition to execute the for loop.
+//Increment/decrement: In this expression, we increment or decrement the loop counter value.
+// let i=0
+// for (; i<12; i++){  //i=i+1
+//     if (i===8){
+//         break;
+//     }
+// }
+// console.log(i); //8
 
+// for (let i=0; i<4; i++) { //i=i+1
+//     if(i === 2){
+//         continue;
+//     }
+//     console.log(i); // 0 1 3
+// }
+// for (let i=0; i<12; i++){     
+//     console.log(i);
+//     if (i===3)
+//     break;
+// }
 
+//BLOCK SCOPE
+// let message = 'Outside';
+// if (5===5){
+//     let message = 'Equal';
+// console.log(message); //ERROR
+// }
+// console.log(message); //OUTSIDE
 
+//IIFE's
+//Immediately invoked function expression
 
+// (function(){
+//     console.log('in function');
+// })();
+// let app = (function(){
+//     let carId = 123;
+//     console.log('in function');
+//     return{};
+// })();
+// console.log(app);
 
+//BIND
+// let o = {
+//     carId: 123,
+//     getId: function(){
+//         return this.carId
+//     }
+// };
+// let newCar = {carId:456};
+// let newFn = o.getId.bind(newCar);
+// console.log(newFn()); //456
+
+// CLOSURES
+// Global functions are closures that have a name and don’t capture any values.
+// Nested functions are closures that have a name and can capture values from their enclosing function.
+// Closure expressions are unnamed closures written in a lightweight syntax that can capture values from their surrounding context.
+
+// let app = (function() {
+//     let carId = 123;
+//     let getId = function(){
+//         return carId;
+//     };
+//     return {                  //closure
+//         getId: getId     //closure
+//     };
+// })();
+// console.log(app.getId());
+// console.log(carId)
+// //THE this KEYWORD
+//  let fn = function(){
+//     console.log(this===window);
+//  };
+//  fn(); //true
+
+//  let o = {
+//     carId : 123,
+//     getId: function(){
+//         return this.carId
+//     }
+//  };
+//  console.log(o.getId()); //123
+
+//CALL AND APPLY
+//APPLY
+// let o = {
+//     carId : 123,
+//     getId : function(prefix){
+// return  prefix + this.carId;
+//     }
+// };
+// let newCar = { carId: 456 };
+// console.log(o.getId.apply(newCar,['ID: '])); //456
+
+//CALL
+
+// let o ={
+//     carId : 123, 
+//     getId : function(){
+//         return this.carId;
+//     }
+// };
+// let newCar = { carId : 456};
+// console.log(o.getId.call(newCar)); //456
+
+//ARROW FUNCTIONS
+// let getId = () => 123;
+// console.log(getId()); //123
+
+// let getId = prefix => prefix + 123;
+// console.log(getId('ID: ')); //123
+
+// let getId = (prefix, suffix) => prefix + 123 + suffix;
+// console.log(getId('ID: ', '!')); //123!
+// let save = () =>{
+
+// }
+// let getId = (prefix, suffix )=> { 
+//     return prefix + 123 + suffix;
+// };
+// console.log(getId('ID: ', '!')); //123!
+
+// //NORMAL FUNCTIONS
+// function getId(prefix,suffix){
+//     return prefix + 346 + suffix;
+// }
+// console.log(getId("ID: ","!"));
+
+// DEFAULT PARAMETERS
+
+// let trackCar = function(carId,city='NY') {
+//     console.log(`Tracking ${carId} in ${city}.`);
+// };
+// console.log(trackCar(123) );
+// //Tracking 123 in NY.
+// console.log(trackCar(123, 'Chicago'));
+// //Tracking 123 in Chicago.
+
+// function greeting (name = 'stranger') {
+//     console.log(`Hello, ${name}!`)
+//   }
+
+//   greeting() // Output: Hello, stranger!
+//   greeting('Bing') // Output: Hello, Bing!
+
+//CONSTRUCTOR FUNCTION
+// function Car (id){
+// this.carId = id;
+// }
+// let car = new Car(123);
+// console.log(car.carId); //123
+
+//METHOD
+// function Car(id) {
+//     this.carId = id;
+//     this.start = function() {
+//         console.log('start:' + this.carId);
+//     };
+// }
+// let car = new Car(123);
+// car.start(); //start: 123
+
+//TWEET COMPOSER
+// let myName = prompt("What is my name?");
+// alert("the length of your name" + myName + " is " + myName.length);
+// let tweet = prompt("Compose our tweet");
+// let tweetlength = tweet.length;
+// alert(" You have written " + tweetlength + " characters, you have " + ( 140 - tweetlength ) 
+// + " characters remaining ");
+
+//SLICE
+// let myName ="Sasha";
+// // //alert(myName.slice(0,3)); //3-1=2 1-1=0 3-0=3 //sas
+// // //alert(myName.slice(1,3)); //as
+// // alert(myName.slice(2,4));   //ash
+// let tweet = prompt("Compose your tweet");
+// let tweetUnder140 = tweet.slice(0,140)
 
 
 
