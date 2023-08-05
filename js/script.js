@@ -582,11 +582,46 @@ let s = a+b+c/2 */
 
 //SLICE
 // let myName ="Sasha";
-// // //alert(myName.slice(0,3)); //3-1=2 1-1=0 3-0=3 //sas
-// // //alert(myName.slice(1,3)); //as
-// // alert(myName.slice(2,4));   //ash
+// //alert(myName.slice(0,3)); //3-1=2 1-1=0 3-0=3 //sas
+// //alert(myName.slice(1,3)); //as
+// alert(myName.slice(2,4));   //ash
 // let tweet = prompt("Compose your tweet");
-// let tweetUnder140 = tweet.slice(0,140)
+// let tweetUnder140 = tweet.slice(0,140);
+
+// alert(tweetUnder140);
+
+// //toUpperCase
+// let country = "zambia";
+// console.log(country.toUpperCase()); //toLowerCase
+
+//ASSESMENT 
+//Your job is only to change the first letter of the name to uppercase not the rest
+
+//HINTS 
+//Create a variable that stores the name that the user enters.
+// let myName = prompt("What's your name?");
+
+// //Capitalise the first letter of the name .
+// //Isolate the first character.
+// let firstChar = myName.slice(0,1);
+
+// //Turn the first character to uppercase
+// let firstCharUpperCase = firstChar.toUpperCase();
+
+// //Isolate the rest of the name
+// let otherName = myName.slice(1,myName.length);
+// let otherNametoLowerCase = otherName.toLowerCase();
+
+
+// //Concatenate the characters
+// alert( " Hello " + firstCharUpperCase + otherName);
+// //We use the capitalise version of their names to greet them using an alert.
+
+// FUNCTIONS
+function getMilk(money){
+    console.log(money);
+}
+getMilk(50);
 
 
 
