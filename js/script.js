@@ -617,12 +617,40 @@ let s = a+b+c/2 */
 // alert( " Hello " + firstCharUpperCase + otherName);
 // //We use the capitalise version of their names to greet them using an alert.
 
-// FUNCTIONS
-function getMilk(money){
-    console.log(money);
-}
-getMilk(50);
+// // MAIN FUNCTIONS
 
+// function getMilk(money, costsPerBottle){
+//     let numberOfBottles = Math.floor(money / costsPerBottle);
+//     console.log("Buy " + calcBottles(money, costsPerBottle) + " bottles of milk ");
+//     return CalChange(money, 3.5);  // tends to send back a message tp the user.
+// }
+// //CalcBottle function
+// function calcBottles(startingMoney, costsPerBottle){
+//     let numberOfBottles = Math.floor(startingMoney / costsPerBottle);
+//     return numberOfBottles;
+// }
+// //CalChange function
+// function CalChange(startingAmount, costsPerBottle){
+// let change = startingAmount % costsPerBottle;
+// return change;
+// }
+// let change = getMilk(200, 3.5);
+// console.log("Your change is " + change + " dollars ");
+
+//ASSESSMENT 
+//IN THIS CHALLENGE, YO ARE GOING TO CREATE A FUNCTION THAT TELLS US HOW MANY DAYS, WEEKS, AND MONTHS WE HAVE LEFT IF WE LIVE UNTIL90 YEARS.
+//ASSUME THAT 365 DAYS IN A YEAR , 52 WEEKS IN A YEAR, AND 12 MONTHS IN A YEAR . 
+//OUTPUT SHOULD BE 
+//you have X days , Y weeks and Z mnths left .
+
+let age = prompt(" Enter your age! ");
+
+let remainingYears = 90 - age ;
+let days = remainingYears * 365;
+let weeks = remainingYears * 52;
+let months = remainingYears * 12;
+
+alert("You have " + days + "days, " + weeks + " weeks, and " + months + " months Left ")
 
 
 
