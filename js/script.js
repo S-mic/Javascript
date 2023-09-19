@@ -643,14 +643,37 @@ let s = a+b+c/2 */
 //OUTPUT SHOULD BE 
 //you have X days , Y weeks and Z mnths left .
 
-let age = prompt(" Enter your age! ");
+// let age = prompt(" Enter your age! ");
 
-let remainingYears = 90 - age ;
-let days = remainingYears * 365;
-let weeks = remainingYears * 52;
-let months = remainingYears * 12;
+// let remainingYears = 90 - age ;
 
-alert("You have " + days + "days, " + weeks + " weeks, and " + months + " months Left ")
+// let days = remainingYears * 365;
+// let weeks = remainingYears * 52;
+// let months = remainingYears * 12;
+
+// alert("You have " + days + " days, " + weeks + " weeks, or " + months + " months Left. ");
+
+
+//LAST ASSESSMENT 
+// Create a BMI CALCULATOR USING JAVASCRIPT FUNCTIONS
+//The Body Mass (BMI) is a way of estimating the amount of body fat. it's used in medicine to calculate the risk of heart disease.
+// You can calculate it using the formula below, where weight divided by height squared
+//your challenge is to create a function that takes height and weight as input and gives the calculated BMI value as an output.
+// // Create your function below this line 
+// let v1 = prompt("What's your weight ? ");
+// let v2 = prompt("What's your height ? ");
+// function calcBmi(weight,height){
+//     return weight % (height * height);
+// }
+// let BMI = calcBmi(v1,v2)
+// alert("Your BMI is " + BMI );
+
+//alert (bmiCalculator);
+//let bmi = bmiCalculator(65,1.8);
+
+//If my weight is 65kg and my height is 1.8m, I should be able to call your function lik this : 
+//let bmi = bmiCalculator(65, 1.8);
+//bmi should equal around 20 in this case 
 
 
 
